@@ -1,12 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="alimentacion, organico, sano, natural, produccion, comprar, vender, rico, saludable">
+    <meta name="description" content="Sana-mente es un proyecto social que promueve el consumo responsable y sustentable del medio ambiente. Encontrá los mejores productos de cada región del país.">
+    <title>Sana-mente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="gridHome">
+        <header class="encabezado">
+            <div class="encabezado__contenedor">
+              <img src="Multimedia/Logo/logo.png" alt="logo sana mente" class="contenedor__logo">
+              <h1 class="contenedor__titulo">Sana-mente</h1>
+            </div>
+        </header>
+        <nav class="nav">
+            <a class="nav-link nav__item nav__item--active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link nav__item" href="almacen.html">Almacén</a>
+            <a class="nav-link nav__item" href="productores.html">Productores</a>
+            <a class="nav-link nav__item" href="nutricion.html">Nutrición</a>
+            <a class="nav-link nav__item" href="contacto.html">Contacto</a>
+        </nav>
+        <main>
+            <div id="gridContenidoHome">
+                <div class="bannerHome">
+                  <p>Comé rico, 
+                  <br>
+                  comé sano</p>
+                </div>
+                <article class="introHome">
+                    <h2>Un proyecto colectivo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi optio dicta nulla id eveniet, minima dolorum temporibus quisquam at distinctio obcaecati vel velit debitis mollitia amet? Sunt delectus laudantium quibusdam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minima vitae officia vero facilis distinctio iure, accusamus perferendis fugiat, pariatur labore, amet quos repellendus fuga necessitatibus eos laborum? Ut, distinctio?</p>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptas fuga est minus debitis laudantium eos ex, quos architecto veniam dolores aliquam facilis quidem aut eaque at laboriosam nesciunt error.</P>
+                </article>
+                <aside class="articuloHome">
+                    <h3>Conocé a nuestro fundador</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, fugit veritatis. Optio saepe inventore ipsum deleniti suscipit, libero quod obcaecati pariatur aliquid assumenda quae voluptates et consequuntur nemo. Totam, iure.</p>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Multimedia/Artículos/Fundador.jpg" class="d-block w-100" alt="fundador Sana-mente">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Multimedia/Artículos/cultivar.jpg" class="d-block w-100" alt="cultivo con semillas">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Multimedia/Artículos/Productor.jpg" class="d-block w-100" alt="productor Sana-mente">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer class="footer">
+          <div class="footer__contenedor">
+            <img src="Multimedia/Iconos/icono-fb.png" alt="logo sin fondo facebook" class="contenedor__icono">
+            <a href="https://www.facebook.com/" class="contenedor__info">Facebook</a>
+          </div>
+          <div class="footer__contenedor">
+            <img src="Multimedia/Iconos/instagram_ig.png" alt="logo sin fondo instagram" class="contenedor__icono">
+            <a href="https://www.instagram.com/" class="contenedor__info">Instagram</a>
+          </div>
+          <div class="footer__contenedor">
+            <p class="contenedor__info">© Todos los derechos reservados - Copyright 2021</p>
+          </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
