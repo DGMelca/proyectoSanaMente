@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos base*/
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #191919;
+    color: #F0E9E2;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration-line: none;
+    font-weight: bold;
+}
+
+a:link{
+    color: #9EA548;
+}
+
+a:hover{
+    color: #191919;
+}
+
+
+.titulosPrincipales{
+    color: #9EA548;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.encabezado{
+
+    .encabezado__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation-name: animate__pulse;
+    animation-duration: 5s;
+
+    
+        @keyframes animate__pulse{
+            0%{
+                opacity: 0;
+            }
+        
+            100%{
+                opacity: 1;
+            }
+        }
+    
+        .contenedor__logo{
+        scale: 50%;
+        }
+
+        .contenedor__titulo{
+            color: #9EA548;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+}
+
+.nav{
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+
+    .nav__item{
+        font-weight: bold;    
+        font-size: 14px;
+        list-style-type: none;
+
+        &.nav__item--active{
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #2E2C20;
+    justify-content: space-around;
+    font-size: 12px;
+
+
+    .footer__contenedor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+            .contenedor__icono{
+                scale: 30%;
+            }
+
+            .contenedor__info{
+                display: flex;
+                flex-direction: row;
+                margin: 0px;
+            }
+    }
+}
+
+.infoProductores{
+    padding: 10px;
+    
+    .infoProductores__titulo{
+        @extend .titulosPrincipales;
+    }
+
+    .infoProductores__contenido{
+        font-size: 16px;
+        color: #EFD0B1;
+    }
+}
+
+.listadoProductores{
+    display: flex;
+
+    .listadoProductores__contenedor{
+        padding: 30px;
+        margin: 20px;
+        border-radius: 5px;
+        border: #F0E9E2;
+
+        .contenedor__nombre{
+            @extend .titulosPrincipales;
+            font-size: 15px;
+        }
+
+        .contenedor__descripcion{
+            font-size: 13px;
+        }
+        .contenedor__img{
+            
+        }
+    }
+}
+
+
+
+h3{
+    color: #F0E9E2;
+    font-size: 18px;
+}
+
+h4{
+    color: #2E2C20;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.nutricion{
+    margin: 10px;
+
+    .nutricion__titulo{
+        @extend .titulosPrincipales;
+        
+    }
+
+    .nutricion__bajada{
+        font-style: italic;
+    }
+}
+
+.piramide{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+    .piramide__nutri{
+        display: flex;
+        align-items: center;
+
+        .nutri__img{
+            scale: 50%;
+        }
+
+        .nutri__lista{
+            color: #EFD0B1;
+
+            .lista__nivel{
+                color: #9EA548;
+                font-weight: bold;
+                list-style-type: none;
+
+                .nivel__ul{
+
+                    .ul__item{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contacto{
+    padding: 10px;
+
+    .contacto__titulo{
+        @extend .titulosPrincipales;
+
+    }
+
+    .contacto__bajada{
+        font-size: 13px;
+
+    }
+}
+
+
+legend{
+    font-size: 14px;
+    font-weight: bold;
+
+    form{
+        font-size: 12px; 
+    }
+}
+
+
+
+/*Grilla base Home*/
+
+#gridHome{
+    display: grid;
+}
+
+    .encabezado{
+        grid-area: logo;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav{
+        grid-area: menu;
+        width: 100%;
+    }
+
+    main{
+        grid-area: contenido;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .footer{
+        grid-area: footer;
+        width: 100%;
+        height: 50px;
+    }
+
+
+#gridContenidoHome{
+    display: grid;
+}
+
+    .bannerHome{
+        grid-area: banner;
+        background-image: url(../Multimedia/Fondos-Banners/background-alcaulcil.jpg);
+        background-size: cover;
+        width: 100%;
+        color: #2E2C20;
+        text-align: left;
+        font-family: 'Dancing Script', cursive;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 100px;
+    }
+
+    .introHome{
+        grid-area: principal;
+    }
+
+    .articuloHome{
+        grid-area: articulo;
+    }
+
+
+.almacen{
+    margin: 10px;
+    
+        .almacen__intro{
+    
+            .intro__titulo{
+                @extend .titulosPrincipales;
+            }
+    
+            .intro__bajada{
+                font-size: 13px;
+            }
+        }
+    }
+    
+/*Media Queries*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px){
+
+    #gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 60% 10%;
+        grid-template-areas: "logo"
+                             "menu"
+                             "contenido"
+                             "footer";
+    }
+    
+        .encabezado{
+            grid-area: logo;
+            height: 60px;
+            font-size: 20px;
+            justify-self: center;
+            background-color: #2E2C20;
+            font-size: 30px;
+        }
+               
+        .nav{
+            grid-area: menu;
+            height: 200px;
+            flex-direction: column;
+
+        }
+
+        main{
+            grid-area: contenido;
+        }
+    
+        .footer{
+            grid-area: footer;
+            flex-direction: column;
+            align-items: center;
+            height: 130px;
+            background-color: #2E2C20;
+
+            .footer__contenedor{
+                height: 40px;
+            }
+        }
+
+    #gridContenidoHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 25% 25%;
+        grid-template-areas: "banner"
+                             "principal" 
+                             "articulo"
+    }
+    
+        .bannerHome{
+            grid-area: banner;
+            width: 100%;
+            height: 400px;
+            font-size: 60px;
+        }
+    
+        .introHome{
+            grid-area: principal;
+            height: 300px;
+            background-color: #2E2C20;
+            color: #F0E9E2;
+            font-size: 14px;
+            text-align: center;
+            padding: 5px;
+
+            h2{
+                color: #EFD0B1;
+            }
+        }
+        
+        .articuloHome{
+            grid-area: articulo;
+            height: 500px;
+            background-color: #9EA548;
+            text-align: center;
+            align-content: center;
+            padding: 5px 15px 5px 15px;
+        }
+
+    
+        .listadoProductores{
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px){
+
+    #gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 60% 10%;
+        grid-template-areas: "logo"
+                             "menu"
+                             "contenido"
+                             "footer";
+    }
+    
+        .encabezado{
+            grid-area: logo;
+            height: 60px;
+            font-size: 20px;
+            background-color: #2E2C20;
+            font-size: 30px;
+        }
+               
+        .nav{
+            grid-area: menu;
+            height: 40px;
+            flex-direction: row;
+        }
+
+        main{
+            grid-area: contenido;
+        }
+    
+        .footer{
+            grid-area: footer;
+        }
+    
+    #gridContenidoHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 30% 20%;
+        grid-template-areas: "banner"
+                             "principal" 
+                             "articulo"
+
+    }
+    
+        .bannerHome{
+            grid-area: banner;
+            height: 500px;
+        }
+
+
+        .introHome{
+            grid-area: principal;
+            height: 300px;
+            color: #F0E9E2;
+            text-align: center;
+            padding: 15px 10px 15px 10px;
+        }
+
+
+        .articuloHome{
+            grid-area: articulo;
+            height: 600px;
+            text-align: center;
+            background-color: #EFD0B1;
+            padding: 10px;
+        }
+        
+        img{
+            scale: 80%;
+        }
+
+        h3{
+            color: #2E2C20;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        
+    .listadoProductores{
+            flex-direction: column;
+            justify-content: space-evenly;
+    }
+  }
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px){
+
+    #gridHome{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 70% 10%;
+        grid-template-areas: "logo menu"
+                             "contenido contenido"
+                             "footer footer";
+    }
+    
+        .encabezado{
+            grid-area: logo;
+            height: 60px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #2E2C20;
+        }
+        
+        .nav{
+            grid-area: menu;
+            background-color: #2E2C20;
+            height: 60px;
+            flex-direction: row;
+        }
+
+        main{
+            grid-area: contenido;
+        }
+    
+        .footer{
+            grid-area: footer;
+        }
+    
+    
+    #gridContenidoHome{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 60% 40%;
+        grid-row-gap: 10px;
+        grid-template-areas: "banner banner"
+                             "principal articulo"
+    }
+    
+        .bannerHome{
+            grid-area: banner;
+            height: 800px;
+        }
+    
+        .introHome{
+            grid-area: principal;
+            text-align: center;
+            height: 400px;
+            padding: 50px;
+        }
+    
+        .articuloHome{
+            grid-area: articulo;
+            background-color: #9EA548;
+            height: 400px;
+        }
+
+        h3{
+            font-size: 14px;
+            color: #EFD0B1;
+        }
+    
+    .listadoProductores{
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+  }
+  
