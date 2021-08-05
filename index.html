@@ -13,23 +13,20 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div id="gridHome">
         <header class="encabezado">
             <div class="encabezado__contenedor">
               <img src="Multimedia/Logo/logo.png" alt="logo sana mente" class="contenedor__logo">
               <h1 class="contenedor__titulo">Sana-mente</h1>
             </div>
-            <nav class="nav">
-              <ul>
-                <li class="nav__item nav__item--active"><a href="index.html">Home</a></li>
-                <li class="nav__item"><a href="almacen.html">Almacén</a></li>
-                <li class="nav__item"><a href="productores.html">Productores</a></li>
-                <li class="nav__item"><a href="nutricion.html">Nutrición</a></li>
-                <li class="nav__item"><a href="contacto.html">Contacto</a></li>
-              </ul>
+            <nav class="encabezado__menu">
+                <a class="nav-link menu__item menu__item--active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link menu__item" href="almacen.html">Almacén</a>
+                <a class="nav-link menu__item" href="productores.html">Productores</a>
+                <a class="nav-link menu__item" href="nutricion.html">Nutrición</a>
+                <a class="nav-link menu__item" href="contacto.html">Contacto</a>
             </nav>
         </header>
-        <main>
+        <main class="main">
             <div id="gridContenidoHome">
                 <div class="bannerHome">
                   <p>Comé rico, 
@@ -78,17 +75,16 @@
         <footer class="footer">
           <div class="footer__contenedor">
             <img src="Multimedia/Iconos/icono-fb.png" alt="logo sin fondo facebook" class="contenedor__icono">
-            <a href="https://www.facebook.com/" class="contenedor__info">Facebook</a>
+            <a href="https://www.facebook.com/" target="_blanck" class="contenedor__info">Facebook</a>
           </div>
           <div class="footer__contenedor">
             <img src="Multimedia/Iconos/instagram_ig.png" alt="logo sin fondo instagram" class="contenedor__icono">
-            <a href="https://www.instagram.com/" class="contenedor__info">Instagram</a>
+            <a href="https://www.instagram.com/" target="_blanck" class="contenedor__info">Instagram</a>
           </div>
           <div class="footer__contenedor">
             <p class="contenedor__info">© Todos los derechos reservados - Copyright 2021</p>
           </div>
         </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
