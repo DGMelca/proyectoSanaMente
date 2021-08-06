@@ -88,11 +88,7 @@ a:hover{
             }
         }
     }
-
-
-
 }
-
 
 
 .footer{
@@ -286,7 +282,7 @@ legend{
 /*Media Queries*/
 
 /* Mobile Styles */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 640px){
 
     .encabezado{
         flex-direction: column;
@@ -385,12 +381,61 @@ legend{
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 641px){
+
+    
+    .encabezado{
+        flex-direction: column;
+        padding: 1%;
+        align-items: center;
+
+        .encabezado__contenedor{
+            flex-direction: row;
+        }
+
+            .contenedor__logo{
+                margin: 5%;
+            }
+
+            .contenedor__titulo{
+                margin: 5%;
+            }
+
+        .encabezado__menu{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    h2{
+        color: #EFD0B1;
+        font-size: medium;
+        text-transform: uppercase;
+    }
+     
+    .footer{
+        flex-direction: row;
+        background-color: #191919;
+        margin: 1%;
+        padding: 1%;
+        justify-content: space-between;
+
+        .footer__contenedor{
+
+            .contenedor__icono{
+                padding: 0% 10% 0% 0%;
+            }
+
+            .contenedor__info{
+                flex-direction: row;
+            }
+        }
+    }
 
     #gridContenidoHome{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 30% 20%;
+        grid-template-rows: 40% 20% 40%;
         grid-template-areas: "banner"
                              "principal" 
                              "articulo"
@@ -402,24 +447,26 @@ legend{
             height: 500px;
         }
 
-
         .introHome{
             grid-area: principal;
-            height: 300px;
+            height: 250px;
             color: #F0E9E2;
-            text-align: center;
-            padding: 15px 10px 15px 10px;
+            text-align: right;
+            padding: 5%;
         }
 
 
         .articuloHome{
             grid-area: articulo;
             height: 500px;
-            text-align: center;
-            padding: 10px;
+            text-align: left;
+            padding: 5% 5% 10% 5%;
+
+            #carouselfundador{
+                padding: 5% 20% 5% 20%;
+            }
         }
         
-
         h3{
             color: #2E2C20;
             text-transform: uppercase;
@@ -434,6 +481,70 @@ legend{
 
 /* Desktop Styles */
 @media only screen and (min-width: 1024px){
+
+    .encabezado{
+        flex-direction: row;
+
+        .encabezado__contenedor{
+        flex-direction: row;
+
+        
+            .contenedor__logo{
+                margin: 1%;
+            }
+    
+            .contenedor__titulo{
+                color: #9EA548;
+                font-weight: bold;
+                font-size: medium;
+                margin: 0%;
+            }
+        }
+    
+        .encabezado__menu{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+        
+            .menu__item{
+                font-weight: bold;    
+                font-size: small;
+                list-style-type: none;
+        
+                &.menu__item--active{
+                    text-transform: uppercase;
+                    font-size: smaller;
+                }
+            }
+        }
+    }
+    
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        background-color: #2E2C20;
+        justify-content: space-around;
+        font-size: smaller;
+    
+    
+        .footer__contenedor{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+                .contenedor__icono{
+                }
+    
+                .contenedor__info{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0px;
+                }
+        }
+    }
 
     #gridContenidoHome{
         display: grid;
