@@ -23,9 +23,10 @@ a:hover {
   color: #EFD0B1; }
 
 .titulosPrincipales, .infoProductores .infoProductores__titulo, .listadoProductores .listadoProductores__contenedor .contenedor__nombre, .nutricion .nutricion__titulo, .contacto .contacto__titulo, .almacen .almacen__intro .intro__titulo {
-  color: #9EA548;
-  font-size: 20px;
-  font-weight: bold; }
+  color: #EFD0B1;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .encabezado {
   display: flex; }
@@ -258,7 +259,9 @@ legend {
       .footer .footer__contenedor .contenedor__info {
         flex-direction: row; }
   .almacen {
-    text-align: center; }
+    text-align: center;
+    padding: 2%;
+    margin: 5%; }
   .metodoCompra {
     flex-direction: column;
     padding: 1%; }

@@ -31,9 +31,10 @@ a:hover{
 
 
 .titulosPrincipales{
-    color: #9EA548;
-    font-size: 20px;
+    color: #EFD0B1;
+    font-size: large;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 
@@ -428,6 +429,8 @@ legend{
 
         .almacen{
             text-align: center;
+            padding: 2%;
+            margin: 5%;
         }
 
         .metodoCompra{
