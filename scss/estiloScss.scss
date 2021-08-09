@@ -76,7 +76,7 @@ a:hover{
         justify-content: space-evenly;
         text-align: center;
         align-items: center;
-    
+        
         .menu__item{
             font-weight: bold;    
             font-size: small;
@@ -160,9 +160,10 @@ h3{
 }
 
 h4{
-    color: #2E2C20;
-    font-size: 20px;
-    font-weight: lighter;
+    color: #F0E9E2;
+    font-size: medium;
+    text-align: center;
+    padding: 5%;
 }
 
 .nutricion{
@@ -265,24 +266,68 @@ legend{
 
 
 .almacen{
-    margin: 10px;
+    margin: 1%;
     
-        .almacen__intro{
+    .almacen__intro{
     
-            .intro__titulo{
-                @extend .titulosPrincipales;
-            }
+        .intro__titulo{
+            @extend .titulosPrincipales;
+
+        }
     
-            .intro__bajada{
-                font-size: 13px;
-            }
+        .intro__bajada{
+        font-size: 13px;
+
         }
     }
+}
     
+.metodoCompra{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    justify-items: center;
+
+    .metodoCompra__cont{
+        align-items: center;
+
+        .cont__iconCompra{
+        }
+
+        .cont__textCompra{
+            font-size: smaller;
+        }
+    }
+}
+
+.categoriaProductos{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+
+    .categoriaProductos__cont{
+        flex-direction: column;
+        align-content: center;
+               
+        .cont__imgCategoria{
+            border-radius: 10%;
+        }
+
+        .cont__bajada{
+            color: #EFD0B1;
+            font-size: small;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
 /*Media Queries*/
 
 /* Mobile Styles */
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 480px){
 
     .encabezado{
         flex-direction: column;
@@ -346,6 +391,10 @@ legend{
             align-content: center;
             padding: 5px 15px 5px 15px;
             font-size: xx-small;
+            
+            #carouselfundador{
+                padding: 2% 20% 2% 20%;
+            }
 
             h3{
                 font-size: small;
@@ -377,11 +426,47 @@ legend{
             }
         }
 
+        .almacen{
+            text-align: center;
+        }
+
+        .metodoCompra{
+            flex-direction: column;
+            padding: 1%;
+        
+            .metodoCompra__cont{
+                padding: 5%;
+        
+                .cont__iconCompra{
+                    padding: 1%;
+                }
+        
+                .cont__textCompra{
+                    padding: 1% 20% 1% 20%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .categoriaProductos{
+
+            .categoriaProductos__cont{
+                padding: 1%;
+
+                .cont__imgCategoria{
+                    padding: 2%;
+                }
+        
+                .cont__bajada{
+                    padding: 2%;
+                }
+            }
+        }
 
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 641px){
+@media only screen and (min-width: 481px){
 
     
     .encabezado{
@@ -465,25 +550,61 @@ legend{
             #carouselfundador{
                 padding: 5% 20% 5% 20%;
             }
+
+            h3{
+                color: #2E2C20;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
         }
         
-        h3{
-            color: #2E2C20;
-            text-transform: uppercase;
-            font-size: 15px;
-        }
+
         
     .listadoProductores{
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
     }
-  }
 
+
+    .almacen{
+        text-align: center;
+    }
+
+    .metodoCompra{
+        flex-direction: column;
+    
+        .metodoCompra__cont{
+            padding: 1% 10% 1% 10%;
+    
+            .cont__iconCompra{
+                padding: 1%;
+            }
+        }
+    }
+
+    .categoriaProductos{
+
+        .categoriaProductos__cont{
+            padding: 2%;
+
+            .cont__imgCategoria{
+                padding: 3%;
+            }
+    
+            .cont__bajada{
+                padding: 5%;
+            }
+        }
+    }
+
+  }
+  
 /* Desktop Styles */
 @media only screen and (min-width: 1024px){
 
     .encabezado{
         flex-direction: row;
+        justify-content: space-between;
 
         .encabezado__contenedor{
         flex-direction: row;
@@ -501,23 +622,6 @@ legend{
             }
         }
     
-        .encabezado__menu{
-            display: flex;
-            justify-content: space-evenly;
-            text-align: center;
-            align-items: center;
-        
-            .menu__item{
-                font-weight: bold;    
-                font-size: small;
-                list-style-type: none;
-        
-                &.menu__item--active{
-                    text-transform: uppercase;
-                    font-size: smaller;
-                }
-            }
-        }
     }
     
     
@@ -528,7 +632,8 @@ legend{
         background-color: #2E2C20;
         justify-content: space-around;
         font-size: smaller;
-    
+        margin: 0px;
+
     
         .footer__contenedor{
             display: flex;
@@ -550,37 +655,88 @@ legend{
         display: grid;
         grid-template-columns: 70% 30%;
         grid-template-rows: 60% 40%;
-        grid-row-gap: 5%;
         grid-template-areas: "banner banner"
                              "principal articulo"
     }
     
         .bannerHome{
             grid-area: banner;
-            height: 800px;
+            height: 600px;
         }
     
         .introHome{
             grid-area: principal;
             text-align: center;
-            padding: 50px;
+            padding: 10%;
+            height: 400px;
+
         }
     
         .articuloHome{
             grid-area: articulo;
             background-color: #9EA548;
-            margin: 1%;
+            height: 400px;
+            padding: 10%;
+
+            p{
+                font-size: smaller;
+            }
+
+            #carouselfundador{
+                padding: 5% 15% 5% 15%;
+            }
+
+            h3{
+                font-size: 14px;
+                color: #EFD0B1;
+            }
         }
 
-        h3{
-            font-size: 14px;
-            color: #EFD0B1;
-        }
+
 
     
     .listadoProductores{
     flex-direction: row;
     justify-content: space-evenly;
+    }
+
+    .almacen{
+        text-align: left;
+    }
+
+    .metodoCompra{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    
+        .metodoCompra__cont{
+            flex-direction: column;
+            padding: 3%;
+    
+            .cont__iconCompra{
+                padding: 2%;
+            }
+    
+            .cont__textCompra{
+                padding: 10%;
+
+            }
+        }
+    }
+
+    .categoriaProductos{
+
+        .categoriaProductos__cont{
+            padding: 1%;
+
+            .cont__imgCategoria{
+                padding: 1%;
+            }
+    
+            .cont__bajada{
+                padding: 1%;
+            }
+        }
     }
 
   }

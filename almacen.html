@@ -19,12 +19,12 @@
               <img src="Multimedia/Logo/logo.png" alt="logo sana mente" class="contenedor__logo">
               <h1 class="contenedor__titulo">Sana-mente</h1>
             </div>
-            <nav class="nav">
-                <a class="nav-link nav__item" aria-current="page" href="index.html">Inicio</a>
-                <a class="nav-link nav__item nav__item--active" href="almacen.html">Almacén</a>
-                <a class="nav-link nav__item" href="productores.html">Productores</a>
-                <a class="nav-link nav__item" href="nutricion.html">Nutrición</a>
-                <a class="nav-link nav__item" href="contacto.html">Contacto</a>
+            <nav class="encabezado__menu">
+                <a class="nav-link menu__item" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link menu__item menu__item--active" href="almacen.html">Almacén</a>
+                <a class="nav-link menu__item" href="productores.html">Productores</a>
+                <a class="nav-link menu__item" href="nutricion.html">Nutrición</a>
+                <a class="nav-link menu__item" href="contacto.html">Contacto</a>
             </nav>
         </header>
         <main class="main">
@@ -32,84 +32,140 @@
                 <div class="almacen__intro">
                     <h2 class="intro__titulo">Productos</h2>
                     <p class="intro__bajada">Comprá los mejores productos sin agrotóxicos, directo de nuestros productores.</p>
+                    <p class="intro__bajada">Conocé nuestro modo de compra, es muy simple:</p>
                 </div>
             </div>
-            <section>
-                <h3>Frutas y verduras</h3>
-                <div class="card-group container row row-col-2 row-cols-md-4 g-4 max-width:700px">
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/palta.jpg" class="card-img-top" alt="palta cortada">
+            <section class="metodoCompra">
+                <div class="metodoCompra__cont">
+                    <img src="Multimedia/Iconos/icon-elegi.png" alt="icono elegí productos" class="cont__iconCompra">
+                    <p class="cont__textCompra">Elegí los productos favoritos en nuestra tienda</p>
+                </div>
+                <div class="metodoCompra__cont">
+                    <img src="Multimedia/Iconos/icon-compra.png" alt="icono canasto hace tu pedido" class="cont__iconCompra">
+                    <p class="cont__textCompra">Hacé tu pedido a nuestro mail pedidos@sana-mente.com</p>
+                </div>
+                <div class="metodoCompra__cont">
+                    <img src="Multimedia/Iconos/icon-pago.png" alt="icono paga con tarjeta  o efectivo" class="cont__iconCompra">
+                    <p class="cont__textCompra">Pagá con tarjeta de crédito, transferencia bancaria o efectivo</p>
+                </div>
+                <div class="metodoCompra__cont">
+                    <img src="Multimedia/Iconos/icon-entrega.png" alt="icono delivery entrega de productos" class="cont__iconCompra">
+                    <p class="cont__textCompra">Recibilo en tu hogar en 72 hs hábiles</p>
+                </div>
+            </section>
+            <section class="categoriaProductos">
+                <div class="categoriaProductos__cont">
+                    <img src="Multimedia/Galeria/verduras.jpg" alt="verduras aji papa morron con fondo negro" class="cont__imgCategoria">
+                    <h3 class="cont__bajada">Hortalizas</h4>
+                </div>
+                <div class="categoriaProductos__cont">
+                    <img src="Multimedia/Galeria/granola.jpg" alt="granola con pasas" class="cont__imgCategoria">
+                    <h3 class="cont__bajada">Cereales</h4>
+                </div>
+                <div class="categoriaProductos__cont">
+                    <img src="Multimedia/Galeria/legumbres.jpg" alt="legumbres en bolsa arpillera" class="cont__imgCategoria">
+                    <h3 class="cont__bajada">Legumbres</h4>
+                </div>
+                <div class="categoriaProductos__cont">
+                    <img src="Multimedia/Galeria/nueces.jpg" alt="nueces enteras y peladas con bolsa arpillera" class="cont__imgCategoria">
+                    <h3 class="cont__bajada">Frutos secos</h4>
+                </div>
+            </section>
+                <div class="container">
+                    <h4>Productos destacados</h4>
+                    <div class="card-deck row m-10 p-2">
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/almendra.jpg" alt="almendra en cuenco">
                         <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">Palta</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dicta.</p>
-                            <p class="card-text"><small class="text-muted">Productor: Sol Naciente</small></p>
+                            <h5 class="card-title">Almendras</h5>
+                            <p class="card-text text-light">Productor: Tierra pura</p>
                         </div>
-                    </div>
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/pomelo.jpg" class="card-img-top" alt="pomelo con flor">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">Pomelo rosado</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maiores.</p>
-                            <p class="card-text"><small class="text-muted">Productor: Vida verde</small></p>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$70 x 100 gr.</small>
                         </div>
-                    </div>
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/arandanos.jpg" class="card-img-top" alt="arandanos azules">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">Arándanos</h4>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem temporibus repellat nemo eveniet necessitatibus est.</p>
-                            <p class="card-text"><small class="text-muted">Productor: Patagonia cero</small></p>
                         </div>
-                    </div>
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/tomate.jpg" class="card-img-top" alt="tomates rojos enteros redondos">
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/palta.jpg" alt="palta cortada">
                         <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">Tomate redondo</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem fugit nostrum id asperiores repellat, ab obcaecati.</p>
-                            <p class="card-text"><small class="text-muted">Productor: Sol de verano</small></p>
+                            <h5 class="card-title">Palta</h5>
+                            <p class="card-text text-light">Productor: Madre Tierra</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$50 x un.</small>
+                        </div>
+                        </div>
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/pomelo.jpg" alt="pomelo cortado rosado flor">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Pomelo rosado</h5>
+                            <p class="card-text text-light">Productor: Vida natural</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$120</small>
+                        </div>
+                        </div>
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/avellanas.jpg" alt="avellanas">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Avellanas</h5>
+                            <p class="card-text text-light">Productor: Tierra pura</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$210 x 500 gr.</small>
+                        </div>
+                        </div>
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/tomate.jpg" alt="tomates rojos redondos">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Tomates redondos</h5>
+                            <p class="card-text text-light">Productor: Sol Naciente</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$80 x 1 kg.</small>
+                        </div>
+                        </div>
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/arandanos.jpg" alt="arandanos azules">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Arándanos</h5>
+                            <p class="card-text text-light">Productor: Aires patagónicos</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$250 x 250 gr.</small>
+                        </div>
+                        </div>
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/semillas-chia.jpg" alt="semillas chia en cuenco">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Chia</h5>
+                            <p class="card-text text-light">Productor: Aires de campo</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$110 x 250 gr.</small>
+                        </div>
+                        </div>
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/Castaña-de-Cajú.jpg" alt="castañas de caju">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Castañas de Cajú</h5>
+                            <p class="card-text text-light">Productor: Madre Tierra</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$120 x 100 gr.</small>
+                        </div>
+                        </div>
+                        <div class="card bg-dark w-20 col-xs-6 col-md-4 justify-content-around p-2">
+                        <img class="card-img-top" src="Multimedia/Galeria/manzanas.jpg" alt="manzanas rojas cortadas en cajon">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">Manzana roja</h5>
+                            <p class="card-text text-light">Productor: Nuestra Tierra</p>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <small class="text-light">$110 x 1 kg.</small>
+                        </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <br>
-            <section>
-                <h3>Frutos Secos</h3>
-                <div class="card-group container row row-col-2 row-cols-md-4 g-4 max-width:700px">
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/almendra.jpg" class="card-img-top" alt="Almendas en cuenco">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">Almendras</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, autem.</p>
-                            <p class="card-text"><small class="text-muted">Productor: Campo lejano</small></p>
-                        </div>
-                    </div>
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/nueces.jpg" class="card-img-top" alt="nueces enteras y mariposa">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">Nueces</h4>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ex doloribus nihil dolor, cum consequatur?</p>
-                            <p class="card-text"><small class="text-muted">Productor: Vida verde</small></p>
-                        </div>
-                    </div>
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/avellanas.jpg" class="card-img-top" alt="avellanas">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">avellanas</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum provident beatae quod tempore eligendi?</p>
-                            <p class="card-text"><small class="text-muted">Productor: Vida verde</small></p>
-                        </div>
-                    </div>
-                    <div class="col bg-dark">
-                        <img src="Multimedia/Galeria/Castaña-de-Cajú.jpg" class="card-img-top" alt="castanas de caju en cuenco madera">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-light">Castañas de cajú</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum mollitia itaque ullam.</p>
-                            <p class="card-text"><small class="text-muted">Productor: Sol creciente</small></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br>
         </main>
         <footer class="footer">
             <div class="footer__contenedor">
