@@ -117,19 +117,15 @@ h4 {
 
 .piramide {
   display: flex;
-  flex-direction: row;
-  margin: 10px; }
+  margin: 2%;
+  align-content: center;
+  justify-content: center; }
   .piramide .piramide__nutri {
     display: flex;
-    align-items: center; }
-    .piramide .piramide__nutri .nutri__lista {
-      color: #EFD0B1; }
-      .piramide .piramide__nutri .nutri__lista .lista__nivel {
-        color: #9EA548;
-        font-weight: bold;
-        list-style-type: none; }
-        .piramide .piramide__nutri .nutri__lista .lista__nivel .nivel__ul .ul__item {
-          text-align: left; }
+    flex-direction: column;
+    text-align: center; }
+    .piramide .piramide__nutri .nutri__img {
+      padding: 1%; }
 
 .contacto {
   padding: 10px; }
@@ -430,14 +426,15 @@ legend {
       font-size: 14px;
       color: #EFD0B1; }
   .metodoCompra {
-    margin: 3%; }
+    margin: 1%;
+    padding: 1%; }
     .metodoCompra .metodoCompra__cont {
       flex-direction: row;
       justify-content: space-evenly;
-      align-content: center;
-      margin: 1%; }
+      align-content: center; }
       .metodoCompra .metodoCompra__cont .cont__bajadaMetodo {
-        flex-direction: row; }
+        flex-direction: row;
+        padding: 1%; }
       .metodoCompra .metodoCompra__cont .cont__grupo {
         flex-direction: column;
         align-items: center;

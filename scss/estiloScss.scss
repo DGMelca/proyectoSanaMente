@@ -182,33 +182,24 @@ h4{
 
 .piramide{
     display: flex;
-    flex-direction: row;
-    margin: 10px;
+    margin: 2%;
+    align-content: center;
+    justify-content: center;
 
     .piramide__nutri{
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        .nutri__descripcion{
+        }
 
         .nutri__img{
-
+            padding: 1%;
         }
+  
 
-        .nutri__lista{
-            color: #EFD0B1;
-
-            .lista__nivel{
-                color: #9EA548;
-                font-weight: bold;
-                list-style-type: none;
-
-                .nivel__ul{
-
-                    .ul__item{
-                        text-align: left;
-                    }
-                }
-            }
-        }
+        
     }
 }
 
@@ -735,16 +726,17 @@ legend{
         }
 
     .metodoCompra{
-        margin: 3%;
+        margin: 1%;
+        padding: 1%;
 
         .metodoCompra__cont{
             flex-direction: row;
             justify-content: space-evenly;
             align-content: center;
-            margin: 1%;
     
             .cont__bajadaMetodo{
                 flex-direction: row;
+                padding: 1%;
             }
     
             .cont__grupo{
