@@ -265,6 +265,32 @@ legend{
         background-color: #9EA548;
     }
 
+    .metodoCompra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        justify-items: center;
+    
+        .metodoCompra__cont{
+            display: flex;
+            align-items: center;
+    
+            .cont__bajadaMetodo{
+                text-align: center;
+            }
+    
+            .cont__grupo{
+                display: flex;
+                .grupo__img{
+                }
+        
+                .grupo__textoMetodo{
+                    font-size: smaller;
+                }
+            }
+        }
+    }
 
 .almacen{
     margin: 1%;
@@ -283,23 +309,7 @@ legend{
     }
 }
     
-.metodoCompra{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    justify-items: center;
 
-    .metodoCompra__cont{
-        align-items: center;
-
-        .cont__iconCompra{
-        }
-
-        .cont__textCompra{
-            font-size: smaller;
-        }
-    }
-}
 
 .categoriaProductos{
     display: flex;
@@ -402,6 +412,35 @@ legend{
             }
         }
 
+        .metodoCompra{
+            margin: 3%;
+            padding: 10%;
+    
+            .metodoCompra__cont{
+                flex-direction: column;
+        
+                .cont__bajadaMetodo{
+                    flex-direction: row;
+                    padding: 10%;
+                }
+        
+                .cont__grupo{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-items: space-evenly;
+                    padding: 1%;
+                    margin: 1%;
+    
+                    .grupo__img{
+                    }
+            
+                    .grupo__textoMetodo{
+                        padding: 20%;
+                        text-align: center;
+                    }
+                }
+            }
+        }        
     
         .listadoProductores{
             flex-direction: column;
@@ -431,24 +470,6 @@ legend{
             text-align: center;
             padding: 2%;
             margin: 5%;
-        }
-
-        .metodoCompra{
-            flex-direction: column;
-            padding: 1%;
-        
-            .metodoCompra__cont{
-                padding: 5%;
-        
-                .cont__iconCompra{
-                    padding: 1%;
-                }
-        
-                .cont__textCompra{
-                    padding: 1% 20% 1% 20%;
-                    text-align: center;
-                }
-            }
         }
 
         .categoriaProductos{
@@ -560,29 +581,46 @@ legend{
                 font-size: 15px;
             }
         }
-        
 
+        .metodoCompra{
+            margin: 2%;
+    
+            .metodoCompra__cont{
+                flex-direction: column;
         
+                .cont__bajadaMetodo{
+                    flex-direction: row;
+                    padding: 10%;
+                }
+        
+                .cont__grupo{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-items: space-evenly;
+                    padding: 1%;
+                    margin: 1%;
+    
+                    .grupo__img{
+                    }
+            
+                    .grupo__textoMetodo{
+                        padding: 20%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+
     .listadoProductores{
-            flex-direction: column;
-            justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
 
     .almacen{
         text-align: center;
-    }
-
-    .metodoCompra{
-        flex-direction: column;
-    
-        .metodoCompra__cont{
-            padding: 1% 10% 1% 10%;
-    
-            .cont__iconCompra{
-                padding: 1%;
-            }
-        }
     }
 
     .categoriaProductos{
@@ -600,7 +638,8 @@ legend{
         }
     }
 
-  }
+}  
+
   
 /* Desktop Styles */
 @media only screen and (min-width: 1024px){
@@ -695,7 +734,36 @@ legend{
             }
         }
 
+    .metodoCompra{
+        margin: 3%;
 
+        .metodoCompra__cont{
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 1%;
+    
+            .cont__bajadaMetodo{
+                flex-direction: row;
+            }
+    
+            .cont__grupo{
+                flex-direction: column;
+                align-items: center;
+                justify-items: space-evenly;
+                padding: 1%;
+                margin: 1%;
+
+                .grupo__img{
+                }
+        
+                .grupo__textoMetodo{
+                    padding: 10%;
+                    text-align: center;
+                }
+            }
+        }
+    }
 
     
     .listadoProductores{
@@ -705,26 +773,6 @@ legend{
 
     .almacen{
         text-align: left;
-    }
-
-    .metodoCompra{
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-    
-        .metodoCompra__cont{
-            flex-direction: column;
-            padding: 3%;
-    
-            .cont__iconCompra{
-                padding: 2%;
-            }
-    
-            .cont__textCompra{
-                padding: 10%;
-
-            }
-        }
     }
 
     .categoriaProductos{
