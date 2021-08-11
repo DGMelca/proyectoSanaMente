@@ -111,21 +111,25 @@ h4 {
   padding: 5%; }
 
 .nutricion {
-  margin: 10px; }
+  margin: 2%; }
   .nutricion .nutricion__bajada {
-    font-style: italic; }
+    font-size: medium; }
 
 .piramide {
-  display: flex;
-  margin: 2%;
-  align-content: center;
-  justify-content: center; }
+  display: flex; }
   .piramide .piramide__nutri {
     display: flex;
-    flex-direction: column;
     text-align: center; }
-    .piramide .piramide__nutri .nutri__img {
-      padding: 1%; }
+    .piramide .piramide__nutri .nutri__descripcion {
+      text-align: center; }
+    .piramide .piramide__nutri .nutri__cont {
+      display: flex; }
+      .piramide .piramide__nutri .nutri__cont .cont__tituloNutri {
+        font-size: small;
+        text-transform: uppercase;
+        color: #9EA548; }
+      .piramide .piramide__nutri .nutri__cont .cont__bajadaNutri {
+        font-size: small; }
 
 .contacto {
   padding: 10px; }
@@ -133,10 +137,10 @@ h4 {
     font-size: 13px; }
 
 legend {
-  font-size: 14px;
+  font-size: medium;
   font-weight: bold; }
   legend form {
-    font-size: 12px; }
+    font-size: small; }
 
 #gridContenidoHome {
   display: grid; }
@@ -264,6 +268,25 @@ legend {
   .listadoProductores {
     flex-direction: column;
     justify-content: space-evenly; }
+  .nutricion {
+    margin: 5%; }
+    .nutricion .nutricion__titulo {
+      padding: 2%; }
+    .nutricion .nutricion__bajada {
+      padding: 2%; }
+  .piramide {
+    flex-direction: column;
+    margin: 2%; }
+    .piramide .piramide__nutri {
+      flex-direction: column; }
+      .piramide .piramide__nutri .nutri__cont {
+        flex-direction: column;
+        padding: 5%;
+        margin: 5%; }
+        .piramide .piramide__nutri .nutri__cont .cont__tituloNutri {
+          text-align: start; }
+        .piramide .piramide__nutri .nutri__cont .cont__bajadaNutri {
+          text-align: start; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -361,6 +384,30 @@ legend {
   .listadoProductores {
     flex-direction: column;
     justify-content: space-between; }
+  .nutricion {
+    margin: 10%;
+    text-align: center; }
+    .nutricion .nutricion__titulo {
+      padding: 1%; }
+    .nutricion .nutricion__bajada {
+      padding: 1%; }
+  .piramide {
+    flex-direction: column;
+    margin: 5%; }
+    .piramide .piramide__nutri {
+      flex-direction: column; }
+      .piramide .piramide__nutri .nutri__descripcion {
+        padding: 1%;
+        margin: 3%;
+        font-weight: bold; }
+      .piramide .piramide__nutri .nutri__cont {
+        flex-direction: column;
+        padding: 10%;
+        margin: 2%; }
+        .piramide .piramide__nutri .nutri__cont .cont__tituloNutri {
+          text-align: center; }
+        .piramide .piramide__nutri .nutri__cont .cont__bajadaNutri {
+          text-align: center; }
   .almacen {
     text-align: center; }
   .categoriaProductos .categoriaProductos__cont {
@@ -447,6 +494,35 @@ legend {
   .listadoProductores {
     flex-direction: row;
     justify-content: space-evenly; }
+  .nutricion {
+    margin: 1%;
+    text-align: left; }
+    .nutricion .nutricion__titulo {
+      padding: 1%; }
+    .nutricion .nutricion__bajada {
+      padding: 1%; }
+  .piramide {
+    flex-direction: row;
+    margin: 5%;
+    width: 100%;
+    justify-content: center;
+    align-content: center; }
+    .piramide .piramide__nutri {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      .piramide .piramide__nutri .nutri__descripcion {
+        padding: 1%;
+        margin: 3%; }
+      .piramide .piramide__nutri .nutri__cont {
+        flex-direction: column;
+        padding: 1%;
+        margin: 2%;
+        width: 50%; }
+        .piramide .piramide__nutri .nutri__cont .cont__tituloNutri {
+          text-align: left; }
+        .piramide .piramide__nutri .nutri__cont .cont__bajadaNutri {
+          text-align: left; }
   .almacen {
     text-align: left; }
   .categoriaProductos .categoriaProductos__cont {

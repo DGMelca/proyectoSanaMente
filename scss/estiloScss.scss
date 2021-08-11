@@ -168,38 +168,44 @@ h4{
 }
 
 .nutricion{
-    margin: 10px;
+    margin: 2%;
 
     .nutricion__titulo{
         @extend .titulosPrincipales;
-        
     }
 
     .nutricion__bajada{
-        font-style: italic;
+        font-size: medium;
     }
 }
 
 .piramide{
     display: flex;
-    margin: 2%;
-    align-content: center;
-    justify-content: center;
 
     .piramide__nutri{
         display: flex;
-        flex-direction: column;
         text-align: center;
 
         .nutri__descripcion{
+            text-align: center;
         }
 
         .nutri__img{
-            padding: 1%;
         }
-  
-
         
+        .nutri__cont{
+            display: flex;
+
+            .cont__tituloNutri{
+                font-size: small;    
+                text-transform: uppercase;
+                color: #9EA548;
+            }
+
+            .cont__bajadaNutri{
+                font-size: small;
+            }
+        }
     }
 }
 
@@ -219,11 +225,11 @@ h4{
 
 
 legend{
-    font-size: 14px;
+    font-size: medium;
     font-weight: bold;
 
     form{
-        font-size: 12px; 
+        font-size: small; 
     }
 }
 
@@ -438,6 +444,51 @@ legend{
             justify-content: space-evenly;
         }
 
+        .nutricion{
+            margin: 5%;
+            
+            .nutricion__titulo{
+                padding: 2%;                
+            }
+        
+            .nutricion__bajada{
+                padding: 2%;
+            }
+        }
+        
+        .piramide{
+            flex-direction: column;
+            margin: 2%;
+
+            
+            .piramide__nutri{
+                flex-direction: column;
+
+                .nutri__descripcion{
+                }
+        
+                .nutri__img{
+                }
+                
+                .nutri__cont{
+                    flex-direction: column;
+                    padding: 5%;
+                    margin: 5%;
+        
+                    .cont__tituloNutri{
+                        text-align: start;
+                    }
+        
+                    .cont__bajadaNutri{
+                        text-align: start;
+
+                    }
+                }
+            }
+        }
+
+
+
         .footer{
             display: flex;
             flex-direction: column;
@@ -609,6 +660,52 @@ legend{
         justify-content: space-between;
     }
 
+    .nutricion{
+        margin: 10%;
+        text-align: center;
+        
+        .nutricion__titulo{
+            padding: 1%;                
+        }
+    
+        .nutricion__bajada{
+            padding: 1%;
+        }
+    }
+    
+    .piramide{
+        flex-direction: column;
+        margin: 5%;
+
+        
+        .piramide__nutri{
+            flex-direction: column;
+
+            .nutri__descripcion{
+                padding: 1%;
+                margin: 3%;
+                font-weight: bold;
+            }
+    
+            .nutri__img{
+            }
+            
+            .nutri__cont{
+                flex-direction: column;
+                padding: 10%;
+                margin: 2%;
+    
+                .cont__tituloNutri{
+                    text-align: center;
+                }
+    
+                .cont__bajadaNutri{
+                    text-align: center;
+
+                }
+            }
+        }
+    }
 
     .almacen{
         text-align: center;
@@ -630,7 +727,6 @@ legend{
     }
 
 }  
-
   
 /* Desktop Styles */
 @media only screen and (min-width: 1024px){
@@ -761,6 +857,58 @@ legend{
     .listadoProductores{
     flex-direction: row;
     justify-content: space-evenly;
+    }
+
+    .nutricion{
+        margin: 1%;
+        text-align: left;
+        
+        .nutricion__titulo{
+            padding: 1%;                
+        }
+    
+        .nutricion__bajada{
+            padding: 1%;
+        }
+    }
+    
+    .piramide{
+        flex-direction: row;
+        margin: 5%;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        
+        .piramide__nutri{
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+
+            .nutri__descripcion{
+                padding: 1%;
+                margin: 3%;
+            }
+    
+            .nutri__img{
+            }
+            
+            .nutri__cont{
+                flex-direction: column;
+                padding: 1%;
+                margin: 2%;
+                width: 50%;
+
+    
+                .cont__tituloNutri{
+                    text-align: left;
+                }
+    
+                .cont__bajadaNutri{
+                    text-align: left;
+
+                }
+            }
+        }
     }
 
     .almacen{
