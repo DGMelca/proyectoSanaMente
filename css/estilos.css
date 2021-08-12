@@ -87,18 +87,28 @@ a:hover {
     color: #EFD0B1; }
 
 .listadoProductores {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   .listadoProductores .listadoProductores__contenedor {
     padding: 30px;
     margin: 20px;
-    border-radius: 5px;
-    border: #F0E9E2; }
+    border-radius: 5px; }
     .listadoProductores .listadoProductores__contenedor .contenedor__nombre {
       font-size: 15px; }
     .listadoProductores .listadoProductores__contenedor .contenedor__descripcion {
       font-size: 13px; }
     .listadoProductores .listadoProductores__contenedor .contenedor__img {
       border-radius: 5px; }
+
+.artProductores {
+  display: flex; }
+  .artProductores .artProductores__titulo {
+    font: medium;
+    font-weight: bold; }
+  .artProductores .artProductores__texto {
+    font-size: small; }
+  .artProductores .artProductores__img {
+    border-radius: 2%; }
 
 h3 {
   color: #F0E9E2;
@@ -132,9 +142,22 @@ h4 {
         font-size: small; }
 
 .contacto {
-  padding: 10px; }
+  padding: 3%; }
   .contacto .contacto__bajada {
     font-size: 13px; }
+
+.fondoVerdurasBolsa {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 2%; }
+  .fondoVerdurasBolsa .fondoVerdurasBolsa__titulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    text-align: center;
+    color: #EFD0B1; }
+  .fondoVerdurasBolsa .fondoVerdurasBolsa__img {
+    margin: 1%; }
 
 legend {
   font-size: medium;
@@ -265,9 +288,25 @@ legend {
         .metodoCompra .metodoCompra__cont .cont__grupo .grupo__textoMetodo {
           padding: 20%;
           text-align: center; }
+  .infoProductores {
+    padding: 3%;
+    margin: 2%; }
   .listadoProductores {
     flex-direction: column;
     justify-content: space-evenly; }
+  .artProductores {
+    flex-direction: column; }
+    .artProductores .artProductores__titulo {
+      flex-direction: column;
+      justify-content: center;
+      padding: 2%;
+      background-color: #2E2C20; }
+    .artProductores .artProductores__texto {
+      text-align: center;
+      padding: 2%;
+      margin: 2%; }
+    .artProductores .artProductores__img {
+      border-radius: 0%; }
   .nutricion {
     margin: 5%; }
     .nutricion .nutricion__titulo {
@@ -287,6 +326,11 @@ legend {
           text-align: start; }
         .piramide .piramide__nutri .nutri__cont .cont__bajadaNutri {
           text-align: start; }
+  .fondoVerdurasBolsa .fondoVerdurasBolsa__titulo {
+    padding: 1%;
+    font-size: large; }
+  .fondoVerdurasBolsa .fondoVerdurasBolsa__img {
+    padding: 1%; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -330,6 +374,11 @@ legend {
     color: #EFD0B1;
     font-size: medium;
     text-transform: uppercase; }
+  .fondoVerdurasBolsa .fondoVerdurasBolsa__titulo {
+    padding: 2%;
+    font-size: xx-large; }
+  .fondoVerdurasBolsa .fondoVerdurasBolsa__img {
+    padding: 2%; }
   .footer {
     flex-direction: row;
     background-color: #191919;
@@ -381,9 +430,21 @@ legend {
         .metodoCompra .metodoCompra__cont .cont__grupo .grupo__textoMetodo {
           padding: 20%;
           text-align: center; }
+  .infoProductores {
+    margin: 1%;
+    padding: 1%;
+    text-align: center; }
   .listadoProductores {
+    flex-direction: column; }
+  .artProductores {
     flex-direction: column;
-    justify-content: space-between; }
+    padding: 3%; }
+    .artProductores .artProductores__titulo {
+      padding: 1%;
+      text-align: left; }
+    .artProductores .artProductores__texto {
+      padding: 1%;
+      text-align: left; }
   .nutricion {
     margin: 10%;
     text-align: center; }
@@ -431,6 +492,13 @@ legend {
         font-weight: bold;
         font-size: medium;
         margin: 0%; }
+  .fondoVerdurasBolsa {
+    padding: 1%; }
+    .fondoVerdurasBolsa .fondoVerdurasBolsa__titulo {
+      padding: 5%;
+      font-size: 70px; }
+    .fondoVerdurasBolsa .fondoVerdurasBolsa__img {
+      padding: 1%; }
   .footer {
     display: flex;
     flex-direction: row;
@@ -491,16 +559,28 @@ legend {
         .metodoCompra .metodoCompra__cont .cont__grupo .grupo__textoMetodo {
           padding: 10%;
           text-align: center; }
+  .infoProductores {
+    text-align: left; }
   .listadoProductores {
     flex-direction: row;
-    justify-content: space-evenly; }
+    align-content: center;
+    padding: 1%; }
+  .artProductores {
+    padding: 1%;
+    margin: 2%;
+    width: 30%; }
+    .artProductores .artProductores__titulo {
+      text-align: left;
+      background-color: #2E2C20;
+      padding: 1%; }
+    .artProductores .artProductores__texto {
+      text-align: left; }
+    .artProductores .artProductores__img {
+      width: 80%;
+      justify-items: left; }
   .nutricion {
-    margin: 1%;
-    text-align: left; }
-    .nutricion .nutricion__titulo {
-      padding: 1%; }
-    .nutricion .nutricion__bajada {
-      padding: 1%; }
+    text-align: left;
+    margin: 2%; }
   .piramide {
     flex-direction: row;
     margin: 5%;

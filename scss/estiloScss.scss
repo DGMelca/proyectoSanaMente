@@ -132,12 +132,12 @@ a:hover{
 
 .listadoProductores{
     display: flex;
+    justify-content: space-between;
 
     .listadoProductores__contenedor{
         padding: 30px;
         margin: 20px;
         border-radius: 5px;
-        border: #F0E9E2;
 
         .contenedor__nombre{
             @extend .titulosPrincipales;
@@ -153,7 +153,22 @@ a:hover{
     }
 }
 
+.artProductores{
+    display: flex;
 
+    .artProductores__titulo{
+        font: medium;
+        font-weight: bold;
+    }
+
+    .artProductores__texto{
+        font-size: small;
+    }
+
+    .artProductores__img{
+        border-radius: 2%;
+    }
+}
 
 h3{
     color: #F0E9E2;
@@ -210,7 +225,7 @@ h4{
 }
 
 .contacto{
-    padding: 10px;
+    padding: 3%;
 
     .contacto__titulo{
         @extend .titulosPrincipales;
@@ -223,6 +238,23 @@ h4{
     }
 }
 
+.fondoVerdurasBolsa{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 2%;
+
+    .fondoVerdurasBolsa__titulo{
+        font-family: 'Dancing Script', cursive;
+        font-size: xx-large;
+        text-align: center;
+        color: #EFD0B1;
+    }   
+    
+    .fondoVerdurasBolsa__img{
+        margin: 1%;
+    }
+}
 
 legend{
     font-size: medium;
@@ -439,9 +471,36 @@ legend{
             }
         }        
     
+
+        .infoProductores{
+            padding: 3%;
+            margin: 2%;
+        }
+
         .listadoProductores{
             flex-direction: column;
             justify-content: space-evenly;
+        }
+
+        .artProductores{
+            flex-direction: column;        
+            
+            .artProductores__titulo{
+                flex-direction: column;
+                justify-content: center;
+                padding: 2%;
+                background-color: #2E2C20;
+            }
+        
+            .artProductores__texto{
+                text-align: center;
+                padding: 2%;
+                margin: 2%;
+            }
+        
+            .artProductores__img{
+                border-radius: 0%;
+            }
         }
 
         .nutricion{
@@ -487,7 +546,17 @@ legend{
             }
         }
 
-
+        .fondoVerdurasBolsa{
+       
+            .fondoVerdurasBolsa__titulo{
+                padding: 1%;
+                font-size: large;
+            }   
+            
+            .fondoVerdurasBolsa__img{
+                padding: 1%;
+            }
+        }
 
         .footer{
             display: flex;
@@ -564,6 +633,18 @@ legend{
         text-transform: uppercase;
     }
      
+    .fondoVerdurasBolsa{
+       
+        .fondoVerdurasBolsa__titulo{
+            padding: 2%;
+            font-size: xx-large;
+        }   
+        
+        .fondoVerdurasBolsa__img{
+            padding: 2%;
+        }
+    }
+
     .footer{
         flex-direction: row;
         background-color: #191919;
@@ -653,11 +734,30 @@ legend{
             }
         }
 
-
+    .infoProductores{
+        margin: 1%;
+        padding: 1%;
+        text-align: center;
+    }
 
     .listadoProductores{
         flex-direction: column;
-        justify-content: space-between;
+
+    }
+
+    .artProductores{
+        flex-direction: column;    
+        padding: 3%;
+        
+        .artProductores__titulo{
+            padding: 1%;
+            text-align: left;
+        }
+    
+        .artProductores__texto{
+            padding: 1%;
+            text-align: left;
+        }
     }
 
     .nutricion{
@@ -753,6 +853,18 @@ legend{
     
     }
     
+    .fondoVerdurasBolsa{
+       padding: 1%;
+       
+        .fondoVerdurasBolsa__titulo{
+            padding: 5%;
+            font-size: 70px;
+        }   
+        
+        .fondoVerdurasBolsa__img{
+            padding: 1%;
+        }
+    }    
     
     .footer{
         display: flex;
@@ -854,24 +966,42 @@ legend{
     }
 
     
+    .infoProductores{
+        text-align: left;
+    }
+
     .listadoProductores{
-    flex-direction: row;
-    justify-content: space-evenly;
+        flex-direction: row;
+        align-content: center;
+        padding: 1%;
+    }
+
+    .artProductores{
+        padding: 1%;
+        margin: 2%;
+        width: 30%;
+
+        .artProductores__titulo{
+            text-align: left;
+            background-color: #2E2C20;
+            padding: 1%;
+        }
+    
+        .artProductores__texto{
+            text-align: left;
+        }
+
+        .artProductores__img{
+            width: 80%;
+            justify-items: left;
+        }
     }
 
     .nutricion{
-        margin: 1%;
         text-align: left;
-        
-        .nutricion__titulo{
-            padding: 1%;                
-        }
-    
-        .nutricion__bajada{
-            padding: 1%;
-        }
+        margin: 2%;
     }
-    
+
     .piramide{
         flex-direction: row;
         margin: 5%;
